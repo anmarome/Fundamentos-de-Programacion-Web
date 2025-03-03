@@ -1,0 +1,70 @@
+/*color palette*/
+:root {
+    --primary-color: #503a65; 
+    --background-light: #faf8fc; 
+    --secondary-color: #c4c0d8; 
+    --background-dark: #3c2a4d; 
+    --letter-light: #a7a7a7;
+    --letter-dark: #000;
+}
+
+
+.h-custom {
+height: calc(100% - 73px);
+}
+
+@media (max-width: 740px) {
+    .vh-100 {
+      height: auto;
+    }
+}
+
+.background {
+    background-color: #bcb7d2;
+}
+
+#forgot-pass {
+    font-weight: bold;
+    text-align: end;
+    font-size: 12px;
+}
+
+.error {
+    border: red solid 1px;
+}
+
+.form {
+    background-color: var(--background-light);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--background-light);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--background-dark);
+    color: var(--background-light);
+    border: none;
+}
+
+a {
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+h3,
+.form-label {
+    color: var(--background-dark);
+}
+
+input:checked {
+    background-color: var(--background-dark) !important;
+}

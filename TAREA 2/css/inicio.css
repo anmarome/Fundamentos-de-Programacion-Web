@@ -1,0 +1,196 @@
+/*color palette*/
+:root {
+    --primary-color: #503a65; 
+    --background-light: #faf8fc; 
+    --secondary-color: #c4c0d8; 
+    --background-dark: #3c2a4d; 
+    --letter-light: #a7a7a7;
+    --letter-dark: #000;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--background-dark);
+}
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 30vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('../img/fondo-mobile.png') no-repeat center center scroll;
+    background-attachment: fixed;
+    height: 10vh;
+    min-height: 15rem;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+nav {
+    background-color: var(--secondary-color);
+}
+
+/*controla opciones de menu*/
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav-item a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color:var(--background-dark);
+  transition: all 0.5s ease-out;
+}
+
+.nav-item a:hover {
+  color: var(--background-light);
+}
+
+
+.nav-item a:focus, .nav-item a.active {
+  color: var(--background-light);
+}
+
+.navigation-wrap .nav-item {
+  transition: all 200ms linear;
+}
+
+/*menu hamburguesa navbar-toggler*/
+
+.navbar-toggler {
+  background-color: var(--background-dark);
+}
+
+.navbar-toggler:hover {
+  background-color: var(--background-light);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--background-light);
+    border: none;
+    font-size: 20px; 
+}
+
+.btn:hover {
+    background-color: var(--background-dark);
+    color: var(--background-light);
+}
+
+.btn:active {
+    background-color: var(--secondary-color);
+    transform: scale(0.98);
+}
+
+
+
+/*GIF GIF GIF GIFGI FGIFGIFIFGF */
+
+.gif-container {
+  width: 100%;  /* Full width */
+  display: flex; /* Flexbox to center content */
+  justify-content: center; /* Horizontally center the GIF */
+  align-items: center; /* Vertically center the GIF */
+  margin-bottom: 20px; /* Add some space before the footer */
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 2s forwards; /* Fade-in animation */
+}
+
+.gif-container img {
+  max-width: 100%; /* Make sure GIF is responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+
+/*FOOTER FOOTER FOOTER FOOTER FOOTER*/
+footer {
+  background-color: var(--background-dark);
+  color: var(--background-light);
+}
+
+footer img {
+  width: 50px; 
+  height: auto;
+}
+
+
+/* select select*/
+
+.resultado {
+  width: 557px;
+  height: 335px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*apariencia del control SELECT*/
+
+select {
+  color: var(--background-light);
+  background-color: var(--background-dark);
+  font-size: 20px;
+  border: var(--secondary-color);
+  padding: 8px 10px;
+}
+/*apariencia de los textos que estan dentro del SELECT*/
+
+option {
+  background-color: var(--secondary-color);
+  font-size: 20px;
+  color: var(--background-dark);
+}
+
+@media (max-width: 576px) {
+  #resultado {
+      /*por mostrar la imagen usando style backgroundImage se deben usar estas instrucciones*/
+      background-position: center center !important;
+      background-size: 80% !important;
+      background-repeat: no-repeat !important;
+  }
+}

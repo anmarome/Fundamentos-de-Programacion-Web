@@ -1,0 +1,77 @@
+/*color palette*/
+:root {
+    --primary-color: #503a65; 
+    --background-light: #faf8fc; 
+    --secondary-color: #c4c0d8; 
+    --background-dark: #3c2a4d; 
+    --letter-light: #a7a7a7;
+    --letter-dark: #000;
+}
+
+.video-background {
+    position: relative;
+    height: 100vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+}
+
+.video-background img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    filter: brightness(0.2);
+    box-shadow: 0 0 30px 15px rgba(80, 58, 101, 0.6);
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1; /* Ensure content is above the video */
+    padding: 5vh;  /* Adding padding to the container */
+}
+
+.container-fluid h1 {
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-size: 6vw;  /* Scaled font size based on viewport width */
+}
+
+.container-fluid h3 {
+    color: var(--secondary-color);
+    font-size: 3vw;  /* Larger font size for subheading */
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--background-light);
+    font-size: 2vw;  /* Scaled button font size */
+    padding: 1.5rem 2rem;  /* Increase padding for larger buttons */
+    border-radius: 0.5rem; /* Optional, for rounded buttons */
+}
+
+.btn:hover {
+    background-color: var(--background-dark);
+    color: var(--background-light);
+}
+
+.copyright {
+    font-size: 1.2em;
+    margin-top: 2vh;  /* Adding vertical space */
+    color: var(--secondary-color);
+}
+
+/* Social media icons */
+.btn-link {
+    font-size: 2.5vw;  /* Scaled size for social icons */
+}
