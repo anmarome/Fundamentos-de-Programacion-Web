@@ -1,0 +1,112 @@
+ /*color pallete*/
+ :root {
+    --primary-color: #046beb; 
+    --background-light: #8fbdf4; 
+    --secondary-color:#2f84ee;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+.seccion1 {
+    background-color: var(--background-light);
+}
+
+header {
+    background-image: url('../imagenes/header.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header .btn {
+        font-size: 16px;
+        padding: 10px 20px; 
+    }
+}
+
+footer {
+    background-image: url('../imagenes/header.png');
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/***************** TEMPLATE *****************/
+.header {
+    background-color: rgb(252, 253, 253);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../imagenes/bannerkia.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.info3 {
+    box-shadow: 3px 3px 10px #4d4d4d;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+    padding: 40px 20px;
+    border: solid rgb(180, 180, 180) 1px;
+}
+
+.info h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.btncirculos {
+    padding: 15px;
+    border: none;
+    /*distancia entre ellos*/
+    margin: 15px;
+    border-radius: 50%;
+}

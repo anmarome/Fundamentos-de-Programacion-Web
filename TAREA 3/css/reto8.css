@@ -1,0 +1,130 @@
+/*color pallete*/
+:root {
+    --primary-color: #046beb; 
+    --background-light: #8fbdf4; 
+    --secondary-color:#2f84ee;
+}
+
+body {
+    background-color: var(--secondary-color);
+}
+
+.seccion1 {
+    background-color: var(--background-light);
+}
+
+header {
+    background-image: url('../imagenes/header.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+}
+
+header h1 {
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header .btn {
+        font-size: 16px;
+        padding: 10px 20px; 
+    }
+}
+
+footer {
+    background-image: url('../imagenes/header.png');
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/***************** TEMPLATE *****************/
+
+.container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-light);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+input, select, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+hr {
+    border: 1px solid #3498db;
+    width: 80%;
+    margin: 20px 0;
+}
+
+#resultado {
+    font-size: 18px;
+    margin-top: 10px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.employee-info, .performance-ratings {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.input-group, .rating-group {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1; /* Added flex-grow */
+}
+
+.employee-selection {
+    width: auto;
+    margin-bottom: 10px;
+}
