@@ -1,0 +1,70 @@
+/*color palette*/
+:root {
+    --primary-color: #503a65; 
+    --background-light: #faf8fc; 
+    --secondary-color: #c4c0d8; 
+    --background-dark: #3c2a4d; 
+    --letter-light: #a7a7a7;
+    --letter-dark: #000;
+}
+
+/*CSS DE PORTADA*/
+.background {
+    background-color: #bcb7d2;
+}
+
+.form {
+    background-color: var(--background-light);
+    padding: 6%;
+}
+
+.btn {
+    background-color: var(--primary-color);
+    color: var(--background-light);
+    border: none;
+}
+
+.btn:hover {
+    background-color: var(--background-dark);
+    color: var(--background-light);
+    border: none;
+}
+
+h3 {
+    color: var(--background-dark);
+}
+
+/*CSS DE TOUR*/
+
+body {
+    overflow-x: hidden;
+}
+
+#container_principal {
+    height: 90vh;    
+    /*width: 2000px;
+    height: 650px;*/
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+header {
+    padding: 30px;
+    width: 100%;
+    background-color: var(--background-dark);
+    color: var(--background-light);
+} 
+
+/*FOOTER FOOTER FOOTER FOOTER FOOTER*/
+footer {
+    background-color: var(--background-dark);
+    color: var(--background-light);
+}
+  
+footer img {
+    width: 50px; 
+    height: auto;
+}
+  
